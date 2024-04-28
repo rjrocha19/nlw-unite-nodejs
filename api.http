@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo Evento 3",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/e89a81a7-3dc8-4914-9ac7-6107acfd9fb7/attendees
+Content-Type: application/json
+
+{
+  "name": "Douglas Campos",
+  "email": "dcampos@rocketseat.com"
+}
+
+###
+
+GET http://localhost:3333/events/e89a81a7-3dc8-4914-9ac7-6107acfd9fb7
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/e89a81a7-3dc8-4914-9ac7-6107acfd9fb7/attendees
+
+
